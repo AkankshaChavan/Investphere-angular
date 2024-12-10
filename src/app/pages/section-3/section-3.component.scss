@@ -1,0 +1,35 @@
+$dark-blue: #0A2046;
+$white: #fff;
+$black: #000;
+$blue: #0FBDC7;
+$light-gray: #EBE9EC;
+
+.section-3{
+    padding: 40px 0;
+    
+    .d-flex{
+        gap: 20px;
+    }
+
+    .insurance-text{
+        width: 60%;
+
+        .blue-list{
+            color: $blue;
+
+            span{
+                display: inline-flex;
+                justify-content: center;
+                width: 22px;
+                padding: 5px;
+                text-align: center;
+                background: $dark-blue;
+                color: $white;
+                border-radius: 25px;
+            }
+        }
+    }
+    .insurance-img{
+        width: 38%;
+    }
+}
