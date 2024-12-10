@@ -1,0 +1,308 @@
+<section class="section-1">
+    <div class="side-space">
+        <div class="d-flex desk-row">
+            <div class="form-list">
+                <div class="form-title" (click)="setActiveTab('form-1')" [class.active]="activeTab ==='form-1'">
+                    <div class="bg">
+                        <h3>Elevate</h3>
+                        <p>Health plan that covers it all. Designed for everyone.</p>
+                    </div>
+                </div>
+                <div class="form-title" (click)="setActiveTab('form-2')" [class.active]="activeTab ==='form-2'">
+                    <div class="bg">
+                        <h3>Elevate</h3>
+                        <p>Health plan that covers it all. Designed for everyone.</p>
+                    </div>
+                </div>
+                <div class="form-title" (click)="setActiveTab('form-3')" [class.active]="activeTab ==='form-3'">
+                    <div class="bg">
+                        <h3>Elevate</h3>
+                        <p>Health plan that covers it all. Designed for everyone.</p>
+                    </div>
+                </div>
+                <div class="form-title" (click)="setActiveTab('form-4')" [class.active]="activeTab ==='form-4'">
+                    <div class="bg">
+                        <h3>Elevate</h3>
+                        <p>Health plan that covers it all. Designed for everyone.</p>
+                    </div>
+                </div>
+                <div class="form-title" (click)="setActiveTab('form-5')" [class.active]="activeTab ==='form-5'">
+                    <div class="bg">
+                        <h3>Elevate</h3>
+                        <p>Health plan that covers it all. Designed for everyone.</p>
+                    </div>
+                </div>
+                <div class="form-title" (click)="setActiveTab('form-6')" [class.active]="activeTab ==='form-6'">
+                    <div class="bg">
+                        <h3>Elevate</h3>
+                        <p>Health plan that covers it all. Designed for everyone.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="form-wrapp" [ngSwitch]="activeTab">
+                <div class="form-container" *ngSwitchCase="'form-1'">
+                    <form>
+                        <div class="fields">
+                            <div class="group">
+                                <input type="text" placeholder="Adults" />
+                            </div>
+
+                            <div class="group">
+                                <input type="text" placeholder="Kids" />
+                            </div>
+
+                            <div class="group">
+                                <input type="tel" placeholder="Mobile No">
+                            </div>
+
+                            <div class="group">
+                                <input type="email" placeholder="Email" />
+                            </div>
+
+                            <div class="group">
+                                <input type="text" placeholder="Pincode" />
+                            </div>
+
+                            <div class="group">
+                                <input placeholder="Name (Optional)" />
+                            </div>
+
+
+                            <div class="checkbox">
+                                <input type="checkbox" id="terms" required checked="true">
+                                <label for="terms">I agree to the <a href="#" class="link">terms and
+                                        conditions</a></label>
+                                <br />
+                                <input type="checkbox" id="terms" required checked="true">
+                                <label for="terms">I want to receive update on whatsapp</label>
+                            </div>
+
+
+
+                        </div>
+
+                        <div class="submit-grp">
+                            <button type="submit" class="button">Get quote</button>
+                            <br />
+                            <a href="#" class="link">Port Existing Policy</a>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="form-container" *ngSwitchCase="'form-2'">
+                    <form>
+                        <div class="fields">
+                            <div class="group">
+                                <input type="text" placeholder="Adults" />
+                            </div>
+
+                            <div class="group">
+                                <input type="text" placeholder="Kids" />
+                            </div>
+
+                            <div class="group">
+                                <input type="tel" placeholder="Mobile No">
+                            </div>
+
+                            <div class="group">
+                                <input type="email" placeholder="Email" />
+                            </div>
+
+                            <div class="group">
+                                <input type="text" placeholder="Pincode" />
+                            </div>
+
+                            <div class="group">
+                                <input placeholder="Name (Optional)" />
+                            </div>
+
+
+                            <div class="checkbox">
+                                <input type="checkbox" id="terms" required checked="true">
+                                <label for="terms">I agree to the <a href="#" class="link">terms and
+                                        conditions</a></label>
+                                <br />
+                                <input type="checkbox" id="terms" required checked="true">
+                                <label for="terms">I want to receive update on whatsapp</label>
+                            </div>
+
+
+
+                        </div>
+
+                        <div class="submit-grp">
+                            <button type="submit" class="button">Get quote</button>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="form-container" *ngSwitchCase="'form-3'">
+                    <form>
+                        <div class="fields">
+                            <div class="group">
+                                <input type="text" placeholder="Adults" />
+                            </div>
+
+                            <div class="group">
+                                <input type="text" placeholder="Kids" />
+                            </div>
+
+                            <div class="group">
+                                <input type="tel" placeholder="Mobile No">
+                            </div>
+
+                            <div class="group">
+                                <input type="email" placeholder="Email" />
+                            </div>
+
+                            <div class="group">
+                                <input type="text" placeholder="Pincode" />
+                            </div>
+
+                            <div class="group">
+                                <input placeholder="Name (Optional)" />
+                            </div>
+
+
+                            <div class="checkbox">
+                                <input type="checkbox" id="terms" required checked="true">
+                                <label for="terms">I agree to the <a href="#" class="link">terms and
+                                        conditions</a></label>
+                                <br />
+                                <input type="checkbox" id="terms" required checked="true">
+                                <label for="terms">I want to receive update on whatsapp</label>
+                            </div>
+
+
+
+                        </div>
+
+                        <div class="submit-grp">
+                            <button type="submit" class="button">Get quote</button>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="form-container" *ngSwitchCase="'form-4'">
+                    <form>
+                        <div class="fields">
+                            <div class="group">
+                                <input type="text" placeholder="Adults" />
+                            </div>
+
+                            <div class="group">
+                                <input type="text" placeholder="Kids" />
+                            </div>
+
+                            <div class="group">
+                                <input type="tel" placeholder="Mobile No">
+                            </div>
+
+                            <div class="group">
+                                <input type="email" placeholder="Email" />
+                            </div>
+
+                            <div class="group">
+                                <input type="text" placeholder="Pincode" />
+                            </div>
+
+                            <div class="group">
+                                <input placeholder="Name (Optional)" />
+                            </div>
+
+
+                            <div class="checkbox">
+                                <input type="checkbox" id="terms" required checked="true">
+                                <label for="terms">I agree to the <a href="#" class="link">terms and
+                                        conditions</a></label>
+                                <br />
+                                <input type="checkbox" id="terms" required checked="true">
+                                <label for="terms">I want to receive update on whatsapp</label>
+                            </div>
+
+
+
+                        </div>
+
+                        <div class="submit-grp">
+                            <button type="submit" class="button">Get quote</button>
+                            <br />
+                            <a href="#" class="link">Port Existing Policy</a>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="form-container" *ngSwitchCase="'form-5'">
+                    <form>
+                        <div class="fields">
+                            <div class="group">
+                                <input type="text" placeholder="Adults" />
+                            </div>
+
+                            <div class="group">
+                                <input type="text" placeholder="Kids" />
+                            </div>
+
+                            <div class="group">
+                                <input type="tel" placeholder="Mobile No">
+                            </div>
+
+                            <div class="group">
+                                <input type="email" placeholder="Email" />
+                            </div>
+
+
+                            <div class="checkbox">
+                                <input type="checkbox" id="terms" required checked="true">
+                                <label for="terms">I agree to the <a href="#" class="link">terms and
+                                        conditions</a></label>
+                                <br />
+                                <input type="checkbox" id="terms" required checked="true">
+                                <label for="terms">I want to receive update on whatsapp</label>
+                            </div>
+
+
+
+                        </div>
+
+                        <div class="submit-grp">
+                            <button type="submit" class="button">Get quote</button>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="form-container" *ngSwitchCase="'form-6'">
+                    <form>
+                        <div class="fields"><div class="group">
+                                <input type="tel" placeholder="Mobile No">
+                            </div>
+
+                            <div class="group">
+                                <input type="email" placeholder="Email" />
+                            </div>
+
+                            <div class="checkbox">
+                                <input type="checkbox" id="terms" required checked="true">
+                                <label for="terms">I agree to the <a href="#" class="link">terms and
+                                        conditions</a></label>
+                                <br />
+                                <input type="checkbox" id="terms" required checked="true">
+                                <label for="terms">I want to receive update on whatsapp</label>
+                            </div>
+
+
+
+                        </div>
+
+                        <div class="submit-grp">
+                            <button type="submit" class="button">Get quote</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>

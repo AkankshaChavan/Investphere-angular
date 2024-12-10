@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Mulish;
+    src: url('./assets/font/Mulish-Regular.ttf');
+}
+$dark-blue: #0A2046;
+$white: #fff;
+$black: #000;
+$blue: #0FBDC7;
+$light-gray: #EBE9EC;
+
+body {
+    line-height: 1.6;
+    font-size: 14px;
+    font-family: Mulish;
+    color: $dark-blue;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+/* Common Classes */
+.side-space {
+    padding: 0 5%;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.desk-row {
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.link {
+    color: $dark-blue;
+}
+.button{
+    background: $dark-blue;
+    color: $white;
+    padding: 10px;
+    border: 1px solid $dark-blue;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.blue {
+    color: $blue;
+    font-weight: 700;
+}
+
+.white {
+    color: #fff !important;
+}
+
+.right-border {
+    padding-right: 0px;
+    border-right: none;
+}

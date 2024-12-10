@@ -1,0 +1,32 @@
+$dark-blue: #0A2046;
+$white: #fff;
+$black: #000;
+$blue: #0FBDC7;
+$light-gray: #EBE9EC;
+
+
+.section-2{
+    padding: 40px 0;
+
+    .trust-grid{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .trust-card{
+        width: 47%;
+        background: $dark-blue;
+        color: $white;
+        padding: 10px;
+        border-radius: 10px;
+        align-items: center;
+        gap: 10px;
+
+        .img-bg{
+            background: $blue;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    }
+}

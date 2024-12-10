@@ -1,0 +1,85 @@
+$dark-blue: #0A2046;
+$white: #fff;
+$black: #000;
+$blue: #0FBDC7;
+$light-gray: #EBE9EC;
+
+.section-1 {
+    .d-flex {
+        background: $light-gray;
+    }
+
+    .form-list {
+        width: 40%;
+        background: $white;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        .form-title {
+            width: 100%;
+            padding-right: 10px;
+            cursor: pointer;
+
+            .bg {
+                background: $blue;
+                color: $white;
+                padding: 5px 10px;
+                border-radius: 5px;
+            }
+
+            .bg h3::after {
+                content: url('../../../assets/imgs/Vector.png');
+                position: absolute;
+                left: 38%;
+                margin-top: 10px;
+            }
+
+            h3,
+            p {
+                margin: 0;
+            }
+        }
+
+        .form-title.active {
+            padding-right: 0;
+
+            .bg {
+                background: $dark-blue;
+                color: $white;
+                border-radius: 5px 0 0 5px;
+            }
+        }
+    }
+
+
+    .form-wrapp {
+        width: 60%;
+
+        form {
+            padding: 40px;
+
+            .fields {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+
+                .group {
+                    width: 100%;
+
+                    input {
+                        width: 93%;
+                        padding: 12px;
+                        border: 1px solid $light-gray;
+                        border-radius: 5px;
+                    }
+                }
+                .checkbox{
+                    margin: 10px 0;
+                }
+            }
+        }
+
+
+    }
+}
