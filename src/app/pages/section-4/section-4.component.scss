@@ -5,6 +5,10 @@ $blue: #0FBDC7;
 $light-gray: #EBE9EC;
 
 .section-4{
+
+    background: url('../../../assets/imgs/benefit-bg.png');
+    background-size: cover;
+    padding: 40px 0;
     
     .d-flex{
 
@@ -13,5 +17,5 @@ $light-gray: #EBE9EC;
     .benefit-text{
         width: 30%;
     }
-    
+
 }
