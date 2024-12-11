@@ -4,18 +4,79 @@ $black: #000;
 $blue: #0FBDC7;
 $light-gray: #EBE9EC;
 
-.section-4{
+.section-4 {
 
     background: url('../../../assets/imgs/benefit-bg.png');
     background-size: cover;
-    padding: 40px 0;
-    
-    .d-flex{
+    padding: 40px 0 10px;
+    overflow-x: clip;
 
-    }
+    .d-flex {}
 
-    .benefit-text{
+    .benefit-text {
         width: 30%;
+        color: $white;
+
+        .h1{
+            color: $white;
+        }
     }
 
+    .benefit-slider {
+        width: 70%;
+        position: relative;
+        z-index: 9;
+
+        .card-slider {
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 20px;
+            padding: 40px 0;
+
+            .card {
+                background: $white;
+                padding: 30px 20px;
+                position: relative;
+                z-index: 9;
+                height: 380px;
+                margin: 0 5px;
+
+                .d-flex {
+                    justify-content: space-between;
+                    align-items: center;
+                }
+
+                span {
+                    font-size: 40px;
+                    color: $light-gray;
+                    font-weight: 700;
+                }
+
+                h5 {
+                    font-size: 18px;
+                }
+
+                ul {
+                    padding-left: 20px;
+                }
+            }
+        }
+    }
+
+    .benefit-slider::before {
+        content: url('../../../assets/imgs/dotted\ bg.png');
+        position: absolute;
+        z-index: 0;
+        left: 5%;
+    }
+
+}
+
+.slick-prev {
+    content: url('../../../assets/imgs/pre.png')!important;
+
+    
+}
+.slick-next {
+    content: url('../../../assets/imgs/nextt.png')!important;
 }

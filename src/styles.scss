@@ -8,6 +8,7 @@ body {
     font-family: Mulish;
     src: url('./assets/font/Mulish-Regular.ttf');
 }
+$primary: #282828;
 $dark-blue: #0A2046;
 $white: #fff;
 $black: #000;
@@ -18,11 +19,15 @@ body {
     line-height: 1.6;
     font-size: 14px;
     font-family: Mulish;
-    color: $dark-blue;
+    color: $primary;
 }
 
 h1 {
     font-size: 32px;
+}
+
+.h1, .h2, .h3, .h4, .h5{
+    color: $dark-blue;
 }
 
 /* Common Classes */
@@ -68,4 +73,21 @@ h1 {
 .right-border {
     padding-right: 0px;
     border-right: none;
+}
+
+.slick-prev {
+    left: -15px!important;
+    z-index: 9;
+}
+.slick-next{
+    right: 5px!important;
+}
+
+.slick-prev:before {
+    content: url('./assets/imgs/pre.png')!important;
+    opacity: 1!important;
+}
+.slick-next:before {
+    content: url('./assets/imgs/nextt.png')!important;
+    opacity: 1!important;
 }

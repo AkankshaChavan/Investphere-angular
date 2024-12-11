@@ -1,0 +1,55 @@
+$dark-blue: #0A2046;
+$white: #fff;
+$black: #000;
+$blue: #0FBDC7;
+$light-gray: #EBE9EC;
+
+.section-5 {
+    padding: 100px 0 40px;
+    background: $light-gray;
+
+    .d-flex {
+        gap: 20px;
+    }
+
+    .claim-img {
+        width: 48%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .claim {
+        width: 50%;
+
+        .claim-list {
+            width: 100%;
+            display: inline-flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 10px;
+
+            p {
+                width: auto;
+                margin: 0;
+                padding: 20px;
+                background: $white;
+                box-shadow: 0px 4px 8px 0px #00000040;
+                display: inline-flex;
+                align-items: center;
+                gap: 20px;
+
+                span {
+                    width: 23px;
+                    background: #0FBDC7;
+                    border-radius: 25px;
+                    padding: 7px;
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}

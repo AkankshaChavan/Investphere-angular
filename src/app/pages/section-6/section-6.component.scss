@@ -1,0 +1,30 @@
+$dark-blue: #0A2046;
+$white: #fff;
+$black: #000;
+$blue: #0FBDC7;
+$light-gray: #EBE9EC;
+
+.section-6{
+    padding: 40px 0;
+
+    .policy{
+        width: 60%;
+        h2{
+            margin-bottom: 0;
+        }
+
+        ul{
+            margin-top: 25px;
+            padding-left: 25px;
+            list-style: url('../../../assets/imgs/Checkbox.png');
+        }
+    }
+
+    .policy-img{
+        width: 38%;
+
+        img{
+            width: 100%;
+        }
+    }
+}
