@@ -1,0 +1,44 @@
+@import '../../../styles.scss';
+
+footer {
+    background: #027B83;
+    padding: 30px 0;
+    color: #fff;
+
+    .d-flex {
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    p {
+        font-size: 12px;
+        color: #fff;
+    }
+    a {
+        font-size: 12px;
+        color: #fff;
+    }
+
+    .footer-left {
+        width: 30%;
+
+        h4 {
+            font-size: 15px;
+            font-weight: 400;
+            color: #fff;
+        }
+
+        .social-media {
+            .d-flex {
+                justify-content: flex-start;
+                gap: 20px;
+            }
+        }
+    }
+
+    .footer-right {
+        width: 65%;
+    }
+    
+    
+}

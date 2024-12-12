@@ -1,0 +1,32 @@
+@import '../../../styles.scss';
+
+.section-8 {
+    padding: 40px 0;
+    
+    .d-flex {
+        align-items: center;
+        gap: 10px;
+    }
+
+    .bx-shadow {
+        padding: 10px;
+        box-shadow: 0px 4px 8px 0px #00000040;
+        margin: 20px 0;
+
+        span {
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 20px;
+            background: #0A2046;
+            color: #fff;
+            width: 20px;
+            padding: 6px;
+            text-align: center;
+            border-radius: 25px;
+        }
+
+        h2{
+            margin: 0;
+        }
+    }
+}

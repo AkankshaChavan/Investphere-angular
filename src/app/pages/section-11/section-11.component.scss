@@ -1,0 +1,39 @@
+@import '../../../styles.scss';
+
+.section-11 {
+    padding: 40px 0;
+    .d-flex {
+        gap: 20px;
+    }
+
+    .blog-img {
+        width: 48%;
+    }
+
+    .blog-right {
+        width: 50%;
+    }
+
+    .blog-wrap {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 20px;
+        margin-top: 40px;
+
+        .blog{
+            text-align: center;
+            background: $blue;
+            border-radius: 10px;
+            padding-bottom: 30px;
+
+            p{
+                padding: 0 20px;
+            }
+
+            .button{
+                text-decoration: none;
+            }
+        }
+    }
+}

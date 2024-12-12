@@ -1,0 +1,29 @@
+@import '../../../styles.scss';
+
+.section-9{
+    padding: 40px 0;
+    background: $light-gray;
+
+    .d-flex{
+        justify-content: space-between;
+    }
+
+    .review-head{
+        width: 28%;
+    }
+    .reviews{
+        width: 70%;
+
+        .d-flex{
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        h2{
+            margin-top: 0;
+        }
+        p{
+            margin: 0;
+        }
+    }
+}
