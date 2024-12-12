@@ -1,9 +1,9 @@
 @import '../../../styles.scss';
 
 footer {
-    background: #027B83;
+    background: $dark-blue;
     padding: 30px 0;
-    color: #fff;
+    color: $white;
 
     .d-flex {
         justify-content: space-between;
@@ -12,11 +12,11 @@ footer {
 
     p {
         font-size: 12px;
-        color: #fff;
+        color: $white;
     }
     a {
         font-size: 12px;
-        color: #fff;
+        color: $white;
     }
 
     .footer-left {
@@ -25,7 +25,7 @@ footer {
         h4 {
             font-size: 15px;
             font-weight: 400;
-            color: #fff;
+            color: $white;
         }
 
         .social-media {
