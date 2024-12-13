@@ -8,6 +8,7 @@ body {
     font-family: Mulish;
     src: url('./assets/font/Mulish-Regular.ttf');
 }
+
 $primary: #282828;
 $dark-blue: #0A2046;
 $white: #fff;
@@ -26,7 +27,11 @@ h1 {
     font-size: 32px;
 }
 
-.h1, .h2, .h3, .h4, .h5{
+.h1,
+.h2,
+.h3,
+.h4,
+.h5 {
     color: $dark-blue;
 }
 
@@ -52,7 +57,8 @@ h1 {
 .link {
     color: $dark-blue;
 }
-.button{
+
+.button {
     background: $dark-blue;
     color: $white;
     padding: 10px;
@@ -76,18 +82,205 @@ h1 {
 }
 
 .slick-prev {
-    left: -15px!important;
+    left: -15px !important;
     z-index: 9;
 }
-.slick-next{
-    right: 5px!important;
+
+.slick-next {
+    right: 5px !important;
 }
 
 .slick-prev:before {
-    content: url('./assets/imgs/pre.png')!important;
-    opacity: 1!important;
+    content: url('./assets/imgs/pre.png') !important;
+    opacity: 1 !important;
 }
+
 .slick-next:before {
-    content: url('./assets/imgs/nextt.png')!important;
-    opacity: 1!important;
+    content: url('./assets/imgs/nextt.png') !important;
+    opacity: 1 !important;
+}
+
+@media only screen and (max-width: 768px) {
+    .desktop{
+        display: none!important;
+    }
+
+    .hero {
+        .banner-img {
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .section-1 {
+        .d-flex {
+            display: flex;
+            flex-direction: column !important;
+        }
+
+        .form-list {
+            width: 100% !important;
+            padding-bottom: 10px !important;
+
+            .form-title {
+                padding-right: 0px !important;
+
+                h3::after {
+                    display: none !important;
+                }
+            }
+
+            .form-title.active {
+                .bg {
+                    border-radius: 5px !important;
+                }
+            }
+        }
+
+        .form-wrapp {
+            width: 100% !important;
+
+            form {
+                padding: 20px 20px !important;
+
+                .fields {
+                    grid-template-columns: repeat(1, 1fr) !important;
+                }
+            }
+        }
+    }
+
+
+
+    .section-2 {
+
+        // h1 {
+        //     text-align: center !important;
+        // }
+
+        .trust-card {
+            width: 100% !important;
+        }
+    }
+
+
+    .section-3 {
+        .insurance-text {
+            width: 100% !important;
+        }
+
+        .insurance-img {
+            width: 100% !important;
+        }
+    }
+
+
+    .section-4 {
+        .benefit-text {
+            width: 100% !important;
+        }
+
+        .benefit-slider {
+            width: 100% !important;
+        }
+    }
+
+    .section-5 {
+        .claim-img {
+            width: 100% !important;
+        }
+
+        .claim {
+            width: 100% !important;
+        }
+    }
+
+    .section-6 {
+        .d-flex {
+            flex-direction: column !important;
+        }
+
+        .policy,
+        .policy-img {
+            width: 100% !important;
+        }
+
+        .policy-img {
+            margin-top: 30px !important;
+        }
+    }
+
+    .section-7 {
+        .plans {
+            grid-template-columns: repeat(1, 1fr) !important;
+
+            .plan {
+                max-width: 350px !important;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .section-9 {
+        .d-flex {
+            flex-direction: column !important;
+        }
+
+        .review-head {
+            width: 100% !important;
+            text-align: center !important;
+
+            img {
+                display: none !important;
+            }
+        }
+
+        .review-text {
+            text-align: center !important;
+        }
+    }
+
+    .section-10 {
+        .d-flex {
+            flex-direction: column !important;
+        }
+
+        .acc-img {
+            width: 100% !important;
+        }
+    }
+
+    .section-11 {
+
+        img,
+        .blog-right {
+            width: 100% !important;
+        }
+
+        .blog-wrap {
+            flex-direction: column !important;
+        }
+    }
+
+
+    footer {
+        .footer-left {
+            width: 100% !important;
+        }
+        .footer-right {
+            width: 100% !important;
+        }
+    }
+
+
+    .banner-text, .banner-img, .insurance-img img, .claim-img img{
+        margin: 0 auto;
+    }
+
+    .insurance-img img, .claim-img img, .policy-img img, .acc-img, .section-11 img, .blog{
+        max-width: 400px;
+        display: block;
+        margin: 0 auto;
+    }
 }

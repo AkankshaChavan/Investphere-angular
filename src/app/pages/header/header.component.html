@@ -1,8 +1,6 @@
 <header class="header">
     <div class="side-space main-header">
-        <div class="logo">
-            <img src="./assets/imgs/logo-new.png" alt="ICICI Lombard">
-        </div>
+
         <div class="top-header">
             <div class="top-links">
                 <div class="group-1">
@@ -13,7 +11,76 @@
                 </div>
             </div>
         </div>
+        <div class="logo">
+            <img src="./assets/imgs/logo-new.png" alt="ICICI Lombard">
+
+            <button (click)="toggleMenu()" class="menu-toggle">
+                <span *ngIf="!menuOpen">☰</span>
+                <span *ngIf="menuOpen">×</span>
+            </button>
+        </div>
+        
+        
         <nav class="nav">
+            <ul class="nav-links" *ngIf="menuOpen">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Car Insurance</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="">Car Insurance 1</a></li>
+                        <li><a href="">Car Insurance 2</a></li>
+                        <li><a href="">Car Insurance 3</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Two Wheeler Insurance</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="">Two Wheeler Insurance 1</a></li>
+                        <li><a href="">Two Wheeler Insurance 2</a></li>
+                        <li><a href="">Two Wheeler Insurance 3</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Health Insurance</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="">Health Insurance 1</a></li>
+                        <li><a href="">Health Insurance 2</a></li>
+                        <li><a href="">Health Insurance 3</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="" class="dropdown-toggle">Travel Insurance</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="">Travel Insurance 1</a></li>
+                        <li><a href="">Travel Insurance 2</a></li>
+                        <li><a href="">Travel Insurance 3</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle">Other Insurance</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="">Other Insurance 1</a></li>
+                        <li><a href="">Other Insurance 2</a></li>
+                        <li><a href="">Other Insurance 3</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Claims</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="">Claims 1</a></li>
+                        <li><a href="">Claims 2</a></li>
+                        <li><a href="">Claims 3</a></li>
+                    </ul>
+                </li>
+
+                <li class="login">
+                    <a href="#" class="button">Login</a>
+                </li>
+
+            </ul>
+            
+        </nav>
+
+        <nav class="nav desktop">
             <ul class="nav-links">
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle">Car Insurance</a>
@@ -69,9 +136,7 @@
                 </li>
 
             </ul>
-            <button class="menu-toggle">
-                ☰
-            </button>
+            
         </nav>
     </div>
 </header>

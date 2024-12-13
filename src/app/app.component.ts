@@ -27,8 +27,7 @@ import { FooterComponent } from './pages/footer/footer.component';
     Section5Component, Section6Component,
     Section7Component, Section8Component,
     Section9Component, Section10Component,
-    Section11Component, FooterComponent
-  ],
+    Section11Component, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
