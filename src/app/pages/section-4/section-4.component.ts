@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 declare var $: any;
 
+
 @Component({
   selector: 'app-section-4',
   standalone: true,
@@ -10,6 +11,10 @@ declare var $: any;
   styleUrl: './section-4.component.scss'
 })
 export class Section4Component implements OnInit {
+
+  constructor(){
+    
+  }
 
   ngOnInit() {
     if (typeof $ !== 'undefined') {
